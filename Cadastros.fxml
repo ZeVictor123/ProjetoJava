@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
+   <children>
+      <Label layoutX="361.0" layoutY="243.0" prefHeight="17.0" prefWidth="49.0" text="Nome:" />
+      <Label layoutX="361.0" layoutY="302.0" prefHeight="17.0" prefWidth="49.0" text="Número:" />
+      <Label layoutX="361.0" layoutY="364.0" prefHeight="17.0" prefWidth="49.0" text="Sexo:" />
+      <TextField fx:id="textNome" layoutX="427.0" layoutY="239.0" onMouseClicked="#volta" />
+      <TextField fx:id="textNumero" layoutX="427.0" layoutY="298.0" onMouseClicked="#volta" />
+      <RadioButton fx:id="rbM" layoutX="410.0" layoutY="364.0" mnemonicParsing="false" onAction="#volta" text="M">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexog" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbF" layoutX="458.0" layoutY="364.0" mnemonicParsing="false" onAction="#volta" text="F" toggleGroup="$sexog" />
+      <RadioButton fx:id="rbI" layoutX="502.0" layoutY="364.0" mnemonicParsing="false" onAction="#volta" text="Outro" toggleGroup="$sexog" />
+      <Button fx:id="btEnviar" layoutX="413.0" layoutY="446.0" mnemonicParsing="false" onAction="#salvar" prefHeight="56.0" prefWidth="117.0" text="Enviar" textAlignment="CENTER" textFill="#4990ee">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="286.0" layoutY="114.0" text="Cadastre um Aluno:" textFill="#43b2fb">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="infor" alignment="CENTER" contentDisplay="CENTER" layoutX="341.0" layoutY="407.0" prefHeight="17.0" prefWidth="261.0" text="    " textAlignment="CENTER" textFill="#43e82d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="590.0" prefWidth="170.0" style="-fx-background-color: #888888;">
+         <children>
+            <ToggleButton layoutX="9.0" layoutY="262.0" mnemonicParsing="false" onAction="#home" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Home" textAlignment="CENTER" textFill="#43b2fb">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </ToggleButton>
+            <Button layoutX="9.0" layoutY="309.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Emprestar Livro" textAlignment="CENTER" textFill="#43b2fb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="357.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Devolver Livro" textAlignment="RIGHT" textFill="#43b2fb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="406.0" mnemonicParsing="false" onAction="#pesquisar" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Pesquisas" textFill="#43b2fb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="145.0" fitWidth="131.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ep.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="168.0" prefHeight="101.0" prefWidth="610.0" style="-fx-background-color: #24ee11;">
+         <children>
+            <Pane layoutX="-3.0" layoutY="21.0" prefHeight="60.0" prefWidth="603.0" style="-fx-background-color: #888888;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="24.0" prefHeight="54.0" prefWidth="597.0" text="Biblioteca Padre João Bosco de Lima" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

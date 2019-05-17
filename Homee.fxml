@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Pane layoutX="170.0" prefHeight="101.0" prefWidth="607.0" style="-fx-background-color: #24ee11;">
+         <children>
+            <Pane layoutX="-3.0" layoutY="21.0" prefHeight="60.0" prefWidth="603.0" style="-fx-background-color: #888888;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="24.0" prefHeight="54.0" prefWidth="597.0" text="Biblioteca Padre João Bosco de Lima" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="590.0" prefWidth="170.0" style="-fx-background-color: #888888;">
+         <children>
+            <ToggleButton layoutX="9.0" layoutY="262.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Cadastrar Aluno" textAlignment="CENTER" textFill="#43b2fb">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </ToggleButton>
+            <Button layoutX="9.0" layoutY="309.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Emprestar Livro" textAlignment="CENTER" textFill="#43b2fb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="357.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Devolver Livro" textAlignment="RIGHT" textFill="#43b2fb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="406.0" mnemonicParsing="false" onAction="#pesquisar" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Pesquisas" textFill="#43b2fb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="145.0" fitWidth="131.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ep.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

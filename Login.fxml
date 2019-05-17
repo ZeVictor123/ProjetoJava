@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="776.0" style="-fx-background-color: #1eae11;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="305.0" layoutY="22.0" text="Login" textFill="WHITE">
+         <font>
+            <Font size="68.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="190.0" text="Usuário:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="286.0" text="Senha:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="314.0" layoutY="231.0" prefHeight="25.0" prefWidth="167.0" text="Victor" />
+      <PasswordField fx:id="passSenha" layoutX="314.0" layoutY="320.0" prefHeight="25.0" prefWidth="167.0" text="12345678" />
+      <Button layoutX="326.0" layoutY="410.0" mnemonicParsing="false" onAction="#enviar" prefHeight="58.0" prefWidth="125.0" style="-fx-background-color: #ffffff;" text="Entrar" textFill="#00a4eb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
